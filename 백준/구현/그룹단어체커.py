@@ -7,13 +7,13 @@ cnt = 0
 for _ in range(n):
     s = list(input())
     isExist = [False]*26
-    pred=''
+    pred = ''
     for x in s:
-        idx=ord(x)-97
-        if isExist[idx] and pred!=x:
+        idx = ord(x)-97
+        if isExist[idx] and pred != x:
             break
-        isExist[idx]=True
-        pred=x
+        isExist[idx] = True
+        pred = x
     else:
-        cnt+=1
+        cnt += 1
 print(cnt)
